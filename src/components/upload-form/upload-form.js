@@ -30,6 +30,7 @@ const UploadForm = ({ fetchData }) => {
             <span className="title">{fileData === null ? "Add file" : fileData.name}</span>
             <input
               type="file"
+              accept=".txt"
               onChange={e => {
                 onChooseFileHandler(e);
               }}
